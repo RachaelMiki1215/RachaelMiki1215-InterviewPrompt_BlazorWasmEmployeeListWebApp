@@ -1,2 +1,8 @@
 # InterviewPrompt_BlazorWasmEmployeeListWebApp
-Interview Prompt. Blazor WASM web app displaying employee list.
+This project was part of an interview prompt for a c#/.NET SW dev position.  
+It is a simple Blazor WASM web app displaying employee list.  
+[Visit here](https://dotnetblazorwasminterviewprompt.azurewebsites.net/) to see it in action.
+
+## Libraries/Packages Used
+- [Syncfusion Blazor components](https://www.syncfusion.com/blazor-components)
+- [Bogus](https://github.com/bchavez/Bogus) .
