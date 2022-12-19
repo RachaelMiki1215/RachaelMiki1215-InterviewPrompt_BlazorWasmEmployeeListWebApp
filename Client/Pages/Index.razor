@@ -1,0 +1,95 @@
+﻿@page "/"
+@using TechTest_v2.Shared
+@inject HttpClient Http
+
+<PageTitle>Employee List</PageTitle>
+
+@if (employees == null)
+{
+    @if (isError)
+    {
+        <h3>Error</h3>
+        <p>@errorMsg</p>
+    }
+    else
+    {
+        <p><em>Loading...</em></p>   
+    }
+}
+else
+{
+    <SfGrid @ref="Grid" DataSource="@employees" AllowPaging="true" AllowSorting="true" AllowFiltering="true">
+        <GridPageSettings PageSize="10"></GridPageSettings>
+        <GridColumns>
+            <GridColumn Field="@nameof(Employee.FirstName)" HeaderText="First Name" />
+            <GridColumn Field="@nameof(Employee.LastName)" HeaderText="Last Name" />
+            <GridColumn Field="@nameof(Employee.Phone)" />
+            <GridColumn Field="@nameof(Employee.Address)" />
+            <GridColumn Field="@nameof(Employee.City)" />
+            <GridColumn Field="@nameof(Employee.State)" HeaderText="State" Type="ColumnType.String">
+                <FilterTemplate>
+                    <SfDropDownList Placeholder="Select a State" ID="StateId" TItem="State" TValue="string" DataSource="@states" Value="@((string)(context as PredicateModel).Value)">
+                        <DropDownListFieldSettings Text="Abbr" Value="Abbr"></DropDownListFieldSettings>
+                        <DropDownListEvents ValueChange="ChangeState" TItem="State" TValue="string"></DropDownListEvents>
+                    </SfDropDownList>
+                </FilterTemplate>
+            </GridColumn>
+            <GridColumn Field="@nameof(Employee.Zip)" HeaderText="Zip Code" />
+            <GridColumn Field="@nameof(Employee.Email)" />
+        </GridColumns>
+    </SfGrid>
+}
+
+@code {
+    private Employee[]? employees;
+    private State[]? states;
+    private bool isError = false;
+    private string? errorMsg;
+    SfGrid<Employee> Grid;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            employees = await Http.GetFromJsonAsync<Employee[]>("Employee");
+        }
+        catch (Exception e)
+        {
+            isError = true;
+            errorMsg = e.Message;
+            throw e;
+        }
+
+        if (employees != null)
+        {
+            List<State> stateList = new List<State>();
+            stateList.Add(new State { Abbr = "-" });
+            string[] stateArr = employees.OrderBy(e => e.State).Select(e => e.State).Distinct().ToArray();
+            foreach (string state in stateArr)
+            {
+                stateList.Add(new State { Abbr = state });
+            }
+            states = stateList.ToArray();
+        }
+    }
+
+    public async Task ChangeState(ChangeEventArgs<string, State> args)
+    {
+        Console.WriteLine();
+
+        if(args.Value == "-")
+        {
+            await Grid.ClearFilteringAsync();
+        }
+        else
+        {
+            Console.WriteLine(Grid.GetColumnByUidAsync("StateId") == null);
+            await Grid.FilterByColumnAsync("State", "equal", args.Value);
+        }
+    }
+
+    public class State
+    {
+        public string Abbr { get; set; } = string.Empty;
+    }
+}

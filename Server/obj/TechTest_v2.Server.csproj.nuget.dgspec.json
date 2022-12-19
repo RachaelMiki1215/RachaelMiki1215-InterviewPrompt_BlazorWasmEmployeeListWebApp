@@ -1,0 +1,232 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Server\\TechTest_v2.Server.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Client\\TechTest_v2.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Client\\TechTest_v2.Client.csproj",
+        "projectName": "TechTest_v2.Client",
+        "projectPath": "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Client\\TechTest_v2.Client.csproj",
+        "packagesPath": "C:\\Users\\hello\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hello\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Shared\\TechTest_v2.Shared.csproj": {
+                "projectPath": "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Shared\\TechTest_v2.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Syncfusion.Blazor": {
+              "target": "Package",
+              "version": "[20.3.0.59, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[6.0.4, 6.0.4]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Server\\TechTest_v2.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Server\\TechTest_v2.Server.csproj",
+        "projectName": "TechTest_v2.Server",
+        "projectPath": "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Server\\TechTest_v2.Server.csproj",
+        "packagesPath": "C:\\Users\\hello\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hello\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Client\\TechTest_v2.Client.csproj": {
+                "projectPath": "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Client\\TechTest_v2.Client.csproj"
+              },
+              "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Shared\\TechTest_v2.Shared.csproj": {
+                "projectPath": "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Shared\\TechTest_v2.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[34.0.2, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Shared\\TechTest_v2.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Shared\\TechTest_v2.Shared.csproj",
+        "projectName": "TechTest_v2.Shared",
+        "projectPath": "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Shared\\TechTest_v2.Shared.csproj",
+        "packagesPath": "C:\\Users\\hello\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hello\\Google Drive\\Programming Projects\\TechTest_v2\\TechTest_v2\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hello\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

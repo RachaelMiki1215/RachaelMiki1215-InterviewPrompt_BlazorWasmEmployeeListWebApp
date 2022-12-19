@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "TechTest_v2.Shared/1.0.0": {
+        "runtime": {
+          "TechTest_v2.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TechTest_v2.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
