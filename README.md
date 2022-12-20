@@ -5,4 +5,4 @@ It is a simple Blazor WASM web app displaying employee list.
 
 ## Libraries/Packages Used
 - [Syncfusion Blazor components](https://www.syncfusion.com/blazor-components)
-- [Bogus](https://github.com/bchavez/Bogus) .
+- [Bogus](https://github.com/bchavez/Bogus)
